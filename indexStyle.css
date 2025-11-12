@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Zen+Maru+Gothic&display=swap');
+
+:root {
+    --pinkDark: #d51441;
+    --pink: #FFE2E2;
+    --greenDark: #118B50;
+    --green: #D3EE98;
+    --fonttext: clamp(10px, 3vw, 18px);
+    --fonthead: clamp(12px, 3vw, 20px);
+}
+
+* {
+    font-family: 'Zen Maru Gothic', 'Itim';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* overflow-x: auto; */
+    /* overflow-y: hidden; */
+    /* height: 100vh; */
+    /* cursor: grab; */
+    /* overflow: hidden; */
+    user-select: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("/img/BG.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    z-index: -1;
+}
+
+.card-container {
+    background-color: transparent;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.text-container {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+}
+
+.text-container input, textarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    /* width: 300px; */
+    padding: 15px;
+    outline: none;
+    width: 80%;
+    font-size: 18px;
+    background-color: #fefefeba;
+    /* border-radius: 10px; */
+}
+
+/* .text-container input { */
+/* border: 2px dashed var(--pinkDark); */
+/* background-color: var(--pink); */
+/* color: var(--pinkDark); */
+/* } */
+
+.text-container input::placeholder {
+    /* color: var(--pinkDark); */
+    font-style: italic;
+}
+
+.text-container textarea {
+    resize: none;
+    min-height: clamp(6rem, 60vh, 12rem);
+    margin-bottom: 20px;
+    /* border: 2px dashed var(--greenDark); */
+    /* background-color: var(--green); */
+    /* color: var(--greenDark); */
+}
+
+.text-container textarea::placeholder {
+    /* color: var(--greenDark); */
+    font-style: italic;
+}
+
+.gift-container {
+    background-color: transparent;
+    /* background-color: #118B50; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* margin: 20px; */
+    justify-content: center;
+    align-items: center;
+}
+
+.gift {
+    display: flex;
+    flex-direction: column;
+    /* width: 120px; */
+    /* min-width: 40%; */
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+#gift-text {
+    /* word-wrap: keep-all; */
+    width: 80%;
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    /* line-break: anywhere; */
+    overflow-wrap: break-word;
+    background-color: #fefefeba;
+}
+
+.unselected {
+    border: none;
+    background-color: #fefefeba;
+    cursor: pointer;
+}
+
+.selected {
+    border: none;
+    background-color: #fefefe;
+}
+
+.gift-image {
+    width: 100px;
+    height: 100px;
+}
+
+.button-container button {
+    background-color: #fefefeba;
+    padding: 10px 15px;
+    margin: 5px;
+    outline: none;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    /* border-radius: 5px; */
+    font-size: 18px;
+}
+
+/* For devices with a minimum width of 768px (Medium) */
+@media screen and (min-width: 768px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-container input, textarea {
+        font-size: 20px;
+    }
+
+    .button-container button {
+        font-size: 20px;
+    }
+
+    #gift-text {
+        font-size: 20px;
+    }
+}
+
+/* For devices with a minimum width of 992px (Large) */
+@media screen and (min-width: 992px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-container input, textarea {
+        font-size: 22px;
+    }
+
+    .button-container button {
+        font-size: 22px;
+    }
+
+    #gift-text {
+        font-size: 22px;
+    }
+}

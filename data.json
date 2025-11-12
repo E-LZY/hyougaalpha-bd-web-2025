@@ -1,0 +1,32 @@
+{
+  "1": {
+    "msg": "สกมเป็นคนเฝ้าประตู มีค่าเข้าเป็นขนมแมวเลีย *พูดหน้านิ่ง*",
+    "cat-img": "/img/01 HyougaByte - Sunflower.PNG",
+    "flo-img": "/img/Sunflower.PNG"
+  },
+  "2": {
+    "msg": "หูย คนมาอวยพรเยอะเลย แอบแปะมังจุ๊ดดีกว่า !",
+    "cat-img": "/img/02 HyougaByte - Lavender.PNG",
+    "flo-img": "/img/Lavender.PNG"
+  },
+  "3": {
+    "msg": "อยากลูบหางหรอ งั้นจับให้ได้สิ แบร่ ๆ ๆ",
+    "cat-img": "/img/03 HyougaByte - Forget Me Not.PNG",
+    "flo-img": "/img/Forget Me Not.PNG.PNG"
+  },
+  "4": {
+    "msg": "มาอวยพรคุณเฮียวสินะ ป้ายเขียนอวยพรอยู่ตรงนี้ล่ะ",
+    "cat-img": "/img/04 HyougaByte - Lilly of the Valley.PNG",
+    "flo-img": "/img/Lilly of the Valley.PNG"
+  },
+  "5": {
+    "msg": "พี่ ๆ มาอวยพรวันเกิดเจ้าพ่อเฮียวกะหรอ มาทางนี้สิคับ !",
+    "cat-img": "/img/05 HyougaByte - Tulip.PNG",
+    "flo-img": "/img/Tulip.PNG"
+  },
+  "6": {
+    "msg": "ไก่ย่างถูกเผา เย้ย สกมจะไปเป็นนักเต้น !",
+    "cat-img": "/img/06 HyougaByte - Camellia.PNG",
+    "flo-img": "/img/Camellia.PNG"
+  }
+}
