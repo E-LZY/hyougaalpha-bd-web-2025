@@ -38,17 +38,25 @@ nextBtn2.addEventListener("click", () => {
   SaveMessage("list.html");
 });
 
+const apiUrl =
+  "https://script.google.com/macros/s/AKfycbxmO5pltIcM83wctml1f7KHeJvrhK59_q-vOCNVfEazpFVUWoCfLvhKa66_knQhAHeEUA/exec";
+
 function SaveMessage(link) {
   const hName = document.getElementById("name").value.trim();
   const hText = document.getElementById("text").value.trim();
-  if (selectedValue && hName && hText ) {
-    fetch("message.json", {
+  if (selectedValue && hName && hText) {
+    const data = { hName, hText, selectedValue };
+    fetch(apiUrl, {
       method: "POST",
-      body: JSON.stringify({ hName, hText, selectedValue }),
-    }).then(() => {
-      document.getElementById("name").value = "";
-      document.getElementById("text").value = "";
-      window.location.href = link;
-    });
+      body: JSON.stringify(data),
+    })
+      .then((res) => res.text())
+      .then((result) => {
+        console.log("Saved:", result);
+        // window.location.href = link;
+      })
+      .catch((err) => console.error("Error:", err));
+  } else {
+    alert("กรอกข้อความก่อนนะเหมียว !");
   }
 }
